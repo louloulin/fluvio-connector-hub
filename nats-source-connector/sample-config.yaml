@@ -1,0 +1,9 @@
+apiVersion: 0.1.0
+meta:
+  version: 0.1.0
+  name: my-nats-source-connector-test-connector
+  type: nats-source-connector-source
+  topic: nats-source
+nats:
+  url: nats://localhost:4222
+  subject: foo

@@ -1,0 +1,14 @@
+[package]
+name = "nats-sink-connector"
+version = "0.1.0"
+authors = ["root"]
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+futures = { version = "0.3", default-features = false }
+serde = { version = "1.0", default-features = false, features = ["derive"]}
+
+fluvio = { git = "https://github.com/infinyon/fluvio", rev = "bc5b4ea48ec9df454af0c83e78d2ef94a71c8f72" }
+fluvio-connector-common = { git = "https://github.com/infinyon/fluvio", rev = "bc5b4ea48ec9df454af0c83e78d2ef94a71c8f72", features = ["derive"] }

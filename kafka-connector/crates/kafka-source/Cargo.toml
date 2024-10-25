@@ -1,0 +1,23 @@
+[package]
+name = "kafka-source"
+version = "0.0.0"
+edition = "2021"
+publish = false
+license = "Apache 2.0"
+authors = ["Fluvio Contributors <team@fluvio.io>"]
+description = "A Fluvio connector that reads records from Kafka"
+
+
+[dependencies]
+async-trait = { workspace = true }
+futures = { workspace = true }
+anyhow = { workspace = true }
+async-std = { workspace = true }
+serde = { workspace = true }
+
+kafka =  { version = "0.10" }
+
+fluvio = { workspace = true }
+fluvio-connector-common = { workspace = true }
+humantime = "2.1.0"
+adaptive_backoff = "0.2.1"

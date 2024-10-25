@@ -1,0 +1,24 @@
+meta:
+  version: latest
+  name: my-kafka-connector
+  type: kafka-sink
+  topic: kafka-topic
+  create-topic: true
+  secrets:
+    - name: BROKER_URL
+  consumer:
+    partition: all
+kafka:
+  url: 
+    secret:
+      name: BROKER_URL
+  topic: fluvio-topic 
+  create-topic: true
+  security:
+    ssl_key:
+      file: /path/to/file
+    ssl_cert:
+      file: /path/to/file
+    ssl_ca:
+      file: /path/to/file
+    security_protocol: ssl

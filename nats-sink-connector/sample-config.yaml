@@ -1,0 +1,8 @@
+apiVersion: 0.1.0
+meta:
+  version: 0.1.0
+  name: my-nats-sink-connector-test-connector
+  type: nats-sink-connector-sink
+  topic: test-nats-sink-connector-topic
+nats:
+  foo: bar

@@ -1,0 +1,18 @@
+[package]
+name = "nats-source-connector"
+version = "0.1.0"
+authors = ["root"]
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+tokio = { version = "1.40", features = ["full"] }
+serde = { version = "1.0", default-features = false, features = ["derive"]}
+futures = { version = "0.3", default-features = false }
+
+fluvio = { git = "https://github.com/infinyon/fluvio", rev = "bc5b4ea48ec9df454af0c83e78d2ef94a71c8f72" }
+fluvio-connector-common = { git = "https://github.com/infinyon/fluvio", rev = "bc5b4ea48ec9df454af0c83e78d2ef94a71c8f72", features = ["derive"] }
+anyhow = "1.0.91"
+async-nats = "0.37.0"
+async-trait = "0.1.83"
